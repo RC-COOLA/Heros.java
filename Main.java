@@ -21,7 +21,7 @@ public class Main {
         heroManager.insertionSortHeroes();
         heroManager.displayHeroes();
 
-        //Remove a hero by name to demonstrate dynamic management
+        //Remove a hero by name
         System.out.println("\nRemoving 'Batman' from the list...");
         heroManager.removeHero("Batman");
         heroManager.displayHeroes();

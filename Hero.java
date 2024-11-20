@@ -2,40 +2,27 @@ public class Hero {
     private String name;
     private int powerLevel;
     private Affiliation affiliation;
-    private String superpower;
-    private String originCity;
 
-// this is where the names are given values
-public Hero(String name, int powerLevel, Affiliation affiliation, String superpower, String originCity) {
+    // Constructor
+    public Hero(String name, int powerLevel, Affiliation affiliation) {
         this.name = name;
         this.powerLevel = powerLevel;
         this.affiliation = affiliation;
-        this.superpower = superpower;
-        this.originCity = originCity;
     }
 
-// These are the getter calls
-public String getName() {
+    // Getter method
+    public String getName() {
         return name;
     }
 
-public int getPowerLevel() {
+    public int getPowerLevel() {
         return powerLevel;
     }
-public Affiliation getAffiliation() {
+
+    public Affiliation getAffiliation() {
         return affiliation;
     }
-
-public String getSuperpower() {
-        return superpower;
-    }
-
-public String getOriginCity() {
-        return originCity;
-    }
-public String toString() {
-        return "Hero{name='" + name + "', powerLevel=" + powerLevel +
-", affiliation=" + affiliation + ", superpower='" + superpower + 
-    "', originCity='" + originCity + "'}";
+    public String toString() {
+        return "Name: " + name + ", Power Level: " + powerLevel + ", Affiliation: " + affiliation;
     }
 }
